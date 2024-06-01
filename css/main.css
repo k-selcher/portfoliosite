@@ -324,12 +324,11 @@ html {
   .portfolio-wrapper {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: stretch;
     flex-flow: row wrap;
   }
   
-  
-  .home-portfolio.piece {
+  .home-portfolio-piece {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -734,17 +733,20 @@ html {
   
   .about-content-wrapper {
     display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+    justify-content: space-between;
   }
-  
+
   #about figure {
-    width: 60%;
+    width: 35%;
+    margin-top: 0;
   }
+
+  .about-info {
+    width: 58%;
+   
+  }
+
   
-  .about-info h4 {
-    text-align: left;
-  }
   
   /* Footer */
   .contact-wrapper {
@@ -777,26 +779,11 @@ html {
   /* Media query for landscape tablets and iPad Pro */
   @media only screen and (min-width: 1024px) {
   
-  .content-wrapper {
-    max-width: 900px;
-  }
-  
-  .about-info h3 {
-    font-size: 3.5rem;
-  }
-  }
-  
-  
-  /* Desktop Styles */
-  
-  @media only screen and (min-width: 1200px) {
-    
     .content-wrapper {
       max-width: 1450px;
     }
   
-    /* Font Styles */
-  
+    /* font styles */
     h1 {
       font-size: 4rem;
     }
@@ -824,6 +811,7 @@ html {
   
     .about-info h4 {
       font-size: 2rem;
+      text-align: left;
     }
   
     p {
@@ -834,8 +822,7 @@ html {
     .language-wrapper p,
     .tool-wrapper p {
       font-size: 1rem;
-     
-    } 
+    }
   
     /* Element Margins (list elements already have 20px of bottom margin */
   
@@ -849,8 +836,8 @@ html {
     }
   
     #work {
-        padding-top: 80px;
-      }
+      padding-top: 80px;
+    }
   
     #skills {
       padding-bottom: 120px;
@@ -870,7 +857,7 @@ html {
     }
   
     .portfolio-header {
-      margin: 00 60px 0;
+      margin: 0 0 60px 0;
     }
   
     .project-description {
@@ -949,29 +936,34 @@ html {
     .home-portfolio-piece {
       width: 30%;
     }
-  
+
+    /* Skills */
+
     .skill,
     .tool {
       width: 30%;
     }
   
-  
     /* About */
   
     .about-content-wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    #about figure {
-      width: 35%;
-      margin-top: 0;
-    }
-  
-    .about-info {
-      width: 58%;
-    }
-  
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #about figure {
+    width: 35%;
+    margin-top: 0;
+  }
+
+  .about-info {
+    width: 58%;
+  }
+
+  /* contact */
+  footer .content-wrapper {
+    max-width: 70%;
+  }
   
   /* Contact */
   
