@@ -332,7 +332,7 @@ html {
   flex-flow: row wrap;
 }
 
-.home-portfolio-piece {
+.home-portfolio-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -340,11 +340,11 @@ html {
   align-items: center;
 }
   
-  .home-portfolio-piece h4 {
+  .home-portfolio-wrapper h4 {
     font-weight: bold;
   }
   
-  .home-portfolio-piece figure {
+  .home-portfolio-wrapper figure {
     width: 100%;
     filter: drop-shadow(1px 2px 6px lightgray);
   }
@@ -712,7 +712,7 @@ html {
     justify-content: space-around;
   }
   
-  .home-portfolio-piece {
+  .home-portfolio-wrapper {
     width: 45%;
     align-items: center;
   }
@@ -941,7 +941,7 @@ html {
   
     /* Portfolio */
   
-    .home-portfolio-piece {
+    .home-portfolio-wrapper{
       width: 30%;
     }
 
@@ -1131,7 +1131,7 @@ html {
     }
   
     /* portfolio */
-    .home-portfolio-piece {
+    .home-portfolio-wrapper {
       width: 30%;
     }
   
@@ -1163,7 +1163,7 @@ html {
   
   }
 
-  }
+  
   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
   }
