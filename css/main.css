@@ -316,9 +316,14 @@ html {
   /* Mobile Styles - Homepage -------------- */
   
   /* Portfolio */
-  #work,
+  #work {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
   #skills {
-    width: 100%;
+    width: 100%
   }
   
   #work h3 {
