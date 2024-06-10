@@ -7,8 +7,14 @@ html {
     color: #183059;
     font-size: 1em;
     line-height: 1.4;
+    
   }
   
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;  
+    }
+}
   /* Customized background color to match design */
   
   ::-moz-selection {
